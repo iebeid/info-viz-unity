@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{98E09F54-4EA4-F352-F1E3-765E37556E49}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_6_1;UNITY_4_6;UNITY_ANDROID;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_IL2CPP;INCLUDE_WP8SUPPORT;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_4_6_FEATURES;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;UNITY5_SCRIPTING_IN_UNITY4;ENABLE_CACHING;ENABLE_CLOTH;UNITY_ANDROID_API;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_MONO;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Scripts\GraphManager.cs" />
+     <Compile Include="Assets\Scripts\Interaction\LanguageSelection.cs" />
+     <Compile Include="Assets\Scripts\Interaction\UIButton.cs" />
+     <Compile Include="Assets\Scripts\Interaction\UIButtonColor.cs" />
+     <Compile Include="Assets\Scripts\Interaction\UIButtonKeys.cs" />
+     <Compile Include="Assets\Scripts\Interaction\UIButtonMessage.cs" />
+     <Compile Include="Assets\Scripts\Interaction\UIButtonOffset.cs" />
+     <Compile Include="Assets\Scripts\Interaction\UIButtonPlayAnimation.cs" />
+     <Compile Include="Assets\Scripts\Interaction\UIButtonRotation.cs" />
+     <Compile Include="Assets\Scripts\Interaction\UIButtonScale.cs" />
+     <Compile Include="Assets\Scripts\Interaction\UIButtonSound.cs" />
+     <Compile Include="Assets\Scripts\Interaction\UIButtonTween.cs" />
+     <Compile Include="Assets\Scripts\Interaction\UICheckbox.cs" />
+     <Compile Include="Assets\Scripts\Interaction\UICheckboxControlledComponent.cs" />
+     <Compile Include="Assets\Scripts\Interaction\UICheckboxControlledObject.cs" />
+     <Compile Include="Assets\Scripts\Interaction\UIDragCamera.cs" />
+     <Compile Include="Assets\Scripts\Interaction\UIDragObject.cs" />
+     <Compile Include="Assets\Scripts\Interaction\UIDragPanelContents.cs" />
+     <Compile Include="Assets\Scripts\Interaction\UIDraggableCamera.cs" />
+     <Compile Include="Assets\Scripts\Interaction\UIDraggablePanel.cs" />
+     <Compile Include="Assets\Scripts\Interaction\UIForwardEvents.cs" />
+     <Compile Include="Assets\Scripts\Interaction\UIGrid.cs" />
+     <Compile Include="Assets\Scripts\Interaction\UIImageButton.cs" />
+     <Compile Include="Assets\Scripts\Interaction\UIInputValidator.cs" />
+     <Compile Include="Assets\Scripts\Interaction\UIPopupList.cs" />
+     <Compile Include="Assets\Scripts\Interaction\UISavedOption.cs" />
+     <Compile Include="Assets\Scripts\Interaction\UIScrollBar.cs" />
+     <Compile Include="Assets\Scripts\Interaction\UISlider.cs" />
+     <Compile Include="Assets\Scripts\Interaction\UISliderColors.cs" />
+     <Compile Include="Assets\Scripts\Interaction\UITable.cs" />
+     <Compile Include="Assets\Scripts\Internal\ActiveAnimation.cs" />
+     <Compile Include="Assets\Scripts\Internal\AnimationOrTween.cs" />
+     <Compile Include="Assets\Scripts\Internal\BMFont.cs" />
+     <Compile Include="Assets\Scripts\Internal\BMGlyph.cs" />
+     <Compile Include="Assets\Scripts\Internal\BMSymbol.cs" />
+     <Compile Include="Assets\Scripts\Internal\BetterList.cs" />
+     <Compile Include="Assets\Scripts\Internal\ByteReader.cs" />
+     <Compile Include="Assets\Scripts\Internal\IgnoreTimeScale.cs" />
+     <Compile Include="Assets\Scripts\Internal\Localization.cs" />
+     <Compile Include="Assets\Scripts\Internal\NGUIDebug.cs" />
+     <Compile Include="Assets\Scripts\Internal\NGUIMath.cs" />
+     <Compile Include="Assets\Scripts\Internal\NGUITools.cs" />
+     <Compile Include="Assets\Scripts\Internal\SpringPanel.cs" />
+     <Compile Include="Assets\Scripts\Internal\UIDrawCall.cs" />
+     <Compile Include="Assets\Scripts\Internal\UIEventListener.cs" />
+     <Compile Include="Assets\Scripts\Internal\UIGeometry.cs" />
+     <Compile Include="Assets\Scripts\Internal\UINode.cs" />
+     <Compile Include="Assets\Scripts\Internal\UIWidget.cs" />
+     <Compile Include="Assets\Scripts\Internal\UpdateManager.cs" />
+     <Compile Include="Assets\Scripts\PinchZoom.cs" />
+     <Compile Include="Assets\Scripts\RotateObjects.cs" />
+     <Compile Include="Assets\Scripts\Tweening\SpringPosition.cs" />
+     <Compile Include="Assets\Scripts\Tweening\TweenColor.cs" />
+     <Compile Include="Assets\Scripts\Tweening\TweenPosition.cs" />
+     <Compile Include="Assets\Scripts\Tweening\TweenRotation.cs" />
+     <Compile Include="Assets\Scripts\Tweening\TweenScale.cs" />
+     <Compile Include="Assets\Scripts\Tweening\TweenTransform.cs" />
+     <Compile Include="Assets\Scripts\Tweening\TweenVolume.cs" />
+     <Compile Include="Assets\Scripts\Tweening\UITweener.cs" />
+     <Compile Include="Assets\Scripts\UI\UIAnchor.cs" />
+     <Compile Include="Assets\Scripts\UI\UIAtlas.cs" />
+     <Compile Include="Assets\Scripts\UI\UICamera.cs" />
+     <Compile Include="Assets\Scripts\UI\UIFilledSprite.cs" />
+     <Compile Include="Assets\Scripts\UI\UIFont.cs" />
+     <Compile Include="Assets\Scripts\UI\UIInput.cs" />
+     <Compile Include="Assets\Scripts\UI\UIInputSaved.cs" />
+     <Compile Include="Assets\Scripts\UI\UILabel.cs" />
+     <Compile Include="Assets\Scripts\UI\UILocalize.cs" />
+     <Compile Include="Assets\Scripts\UI\UIOrthoCamera.cs" />
+     <Compile Include="Assets\Scripts\UI\UIPanel.cs" />
+     <Compile Include="Assets\Scripts\UI\UIRoot.cs" />
+     <Compile Include="Assets\Scripts\UI\UISlicedSprite.cs" />
+     <Compile Include="Assets\Scripts\UI\UISprite.cs" />
+     <Compile Include="Assets\Scripts\UI\UISpriteAnimation.cs" />
+     <Compile Include="Assets\Scripts\UI\UIStretch.cs" />
+     <Compile Include="Assets\Scripts\UI\UITextList.cs" />
+     <Compile Include="Assets\Scripts\UI\UITexture.cs" />
+     <Compile Include="Assets\Scripts\UI\UITiledSprite.cs" />
+     <Compile Include="Assets\Scripts\UI\UITooltip.cs" />
+     <Compile Include="Assets\Scripts\UI\UIViewport.cs" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
